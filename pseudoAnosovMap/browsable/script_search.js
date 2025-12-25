@@ -70,7 +70,11 @@ SearchButton.addEventListener("click", async function () {
     
     OutputTable.innerHTML = "Loading...";
 
-    const dataset = await (await fetch("BrowsableStretchFactorDatasetV1.1Size2To13.json")).json();
+    //const dataset = await (await fetch("BrowsableStretchFactorDatasetV1.1Size2To13.json")).json();
+    //100MB가 넘는 파일의 경우 GitHub에 Git LFS를 사용해서 업로드해야 하는데, 그렇게 할 경우 어차피 GitHub Pages에서 불러올 수가 없어서... 그냥 데이터셋을 100MB 미만의 데이터셋 2개로 분할하고, 로드한 후 병합하는 방법을 써 보기로 함 (2025/12/25 26:59:31)
+    const dataset = (await (await fetch("BrowsableStretchFactorDatasetV1.1Size2To12.json")).json()).concat(
+        await (await fetch("BrowsableStretchFactorDatasetV1.1Size13.json")).json()
+    ); //(2025/12/25 27:00:57)
 
 
 
