@@ -1,0 +1,108 @@
+<!--2025/12/25 (이 문서 시작한 시각: 2025/12/25 24:24:56) (날짜가 없는 시각 주석은 모두 2025/12/25에 작성한 것임)-->
+<!--아래 코드는 GitHub ModularDiscriminant 계정의 test1 repository의
+'Untitled11 - V1.4.html'
+파일의 내용을 복사해 와서 약간 수정한 것이다. (24:27:10)-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Browsable Stretch Factors</title>
+
+    <link href="../../style.css" rel="stylesheet" type="text/css">
+
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({            
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}            
+        });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+<body>
+    <h1>Search Browsable Stretch Factors</h1> <br>
+
+    Current dataset: BrowsableStretchFactorDatasetV1.1Size2To13.json <br><br><br><br> <!--(2025/12/25 24:31:42)-->
+
+
+
+    <label for="n (lower bound) input">size $n$ (lower bound) :</label> <br>
+    <input type="number" id="n (lower bound) input"></input> <br><br>
+
+    <label for="n (upper bound) input">size $n$ (upper bound) :</label> <br>
+    <input type="number" id="n (upper bound) input"></input> <br><br>
+
+
+    <label for="Show data with epsilon = 1">Show data with $\epsilon = 1$</label>
+    <input type="checkbox" id="Show data with epsilon = 1" checked></input> <br><br>
+
+    <label for="Show data with epsilon = -1">Show data with $\epsilon = -1$</label>
+    <input type="checkbox" id="Show data with epsilon = -1" checked></input> <br><br>
+
+
+    <label for="lambda (lower bound) input">browsable stretch factor $\lambda$ (lower bound) :</label> <br>
+    <input type="number" id="lambda (lower bound) input"></input> <br><br>
+
+    <label for="lambda (upper bound) input">browsable stretch factor $\lambda$ (upper bound) :</label> <br>
+    <input type="number" id="lambda (upper bound) input"></input> <br><br>
+
+
+    <label for="d (lower bound) input">degree $d$ of $\lambda$ (lower bound) :</label> <br>
+    <input type="number" id="d (lower bound) input"></input> <br><br>
+
+    <label for="d (upper bound) input">degree $d$ of $\lambda$ (upper bound) :</label> <br>
+    <input type="number" id="d (upper bound) input"></input> <br><br>
+
+    
+    <label for="Show data with minimality = true">Show data with minimality of $M$ = true (O)</label>
+    <input type="checkbox" id="Show data with minimality = true" checked></input> <br><br>
+
+    <label for="Show data with minimality = false">Show data with minimality of $M$ = false (X)</label>
+    <input type="checkbox" id="Show data with minimality = false" checked></input> <br><br>
+
+    
+    <label for="n' (lower bound) input">minimalized size $n'$ (lower bound) :</label> <br>
+    <input type="number" id="n' (lower bound) input"></input> <br><br>
+
+    <label for="n' (upper bound) input">minimalized size $n'$ (upper bound) :</label> <br>
+    <input type="number" id="n' (upper bound) input"></input> <br><br>
+
+    
+    <label for="g (lower bound) input">genus $g$ (lower bound) :</label> <br>
+    <input type="number" id="g (lower bound) input"></input> <br><br>
+
+    <label for="g (upper bound) input">genus $g$ (upper bound) :</label> <br>
+    <input type="number" id="g (upper bound) input"></input> <br><br>
+
+    
+    <label for="Show data with coronality = true">Show data with coronality of $\lambda$ = true (O)</label>
+    <input type="checkbox" id="Show data with coronality = true" checked></input> <br><br>
+
+    <label for="Show data with coronality = false">Show data with coronality of $\lambda$ = false (X)</label>
+    <input type="checkbox" id="Show data with coronality = false" checked></input> <br><br>
+
+    
+    <label for="Show data with det(M) = 1">Show data with determinant $\det(M) = 1$</label>
+    <input type="checkbox" id="Show data with det(M) = 1" checked></input> <br><br>
+
+    <label for="Show data with det(M) = -1">Show data with determinant $\det(M) = -1$</label>
+    <input type="checkbox" id="Show data with det(M) = -1" checked></input> <br><br>
+
+    
+    <button id="SearchButton">Search</button> <br><br>
+
+    <div id="OutputTable"></div>
+
+
+
+    <br><br><br><br><br><br>
+    <!--
+    <a href="index.html">Go Back</a>
+    -->
+    
+    <script src="script_search.js"></script>
+</body>
+</html>

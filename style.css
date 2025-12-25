@@ -1,0 +1,38 @@
+/*2025/12/25
+(이 프로그램 만든 시각: 24:38:20)*/
+/*아래 코드는 GitHub ModularDiscriminant 계정의 test1 repository의
+'style_Untitled9_table.css'
+파일의 내용을 복사해 와서 약간 수정한 것이다. (24:39:33)*/
+
+
+
+table
+{
+    border-collapse: collapse;
+    border: solid 2px black;
+}
+
+td, th
+{
+    padding: 5px 10px;
+}
+
+td
+{
+    text-align: center;
+}
+
+th
+{
+    background-color: rgb(239, 223, 255);
+}
+
+tr:nth-child(odd) td
+{
+    background-color: rgb(247, 239, 255);
+}
+
+tr:nth-child(even) td
+{
+    background-color: white;
+}
